@@ -5,7 +5,7 @@ import ClaudeRecipe from "./ClaudeRecipe";
 
 
 export default function Main(){
-    let [ingredients, setIngredient] =React.useState(["patato", "oregano", "oil", "chicken"])
+    let [ingredients, setIngredient] =React.useState([])
     const[recipeShown, setrecipeShown]=React.useState(false)
     const[recipe, setrecipe]=React.useState("")
 
@@ -16,7 +16,6 @@ export default function Main(){
     }
   
     async function getrecipe(){
-            console.log("button clicked")
             const reciperMarkdown = await getRecipeFromMistral(ingredients);
             console.log(reciperMarkdown)
             setrecipe(reciperMarkdown)
