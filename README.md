@@ -4,22 +4,22 @@ I got mine from Hugging Face
 
 Once you have the key, just create a .env file in the root of the project and save it using the same variable name I used in the code:
 REACT_APP_API_KEY=your_api_key_here //dont change the name
+Install project dependencies
+npm install
 
-That’s it — after this step, the app should run without problems. 🚀
+Start the CORS proxy
+The project uses a local proxy to bypass CORS. Start the proxy server:
+node cors-server.js
+Keep this terminal open while using the app.
+
+Start the React app
+npm start
+
+
+That’s it — after those steps, the app should run without problems. 🚀
+
 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
